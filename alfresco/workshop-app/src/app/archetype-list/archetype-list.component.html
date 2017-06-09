@@ -1,0 +1,26 @@
+<div style="border-width:5px;border-color:red; border-style:solid;" >
+  
+  archetype-list works!
+  <!--
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+  <app-archetype-card></app-archetype-card>
+-->
+  <div *ngFor="let anarchetype of swappData">{{anarchetype.name}} with hair {{anarchetype["hair color"]}}</div>
+
+
+  <hr/>
+
+  <div *ngFor="let anarchetype of swappData$ | async">
+    <app-archetype-card [archetype]="anarchetype" (clickevent)="onclickevent($event)"></app-archetype-card>
+  </div>
+ 
+</div>

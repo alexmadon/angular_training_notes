@@ -1,0 +1,8 @@
+<div style="border-width:5px;border-color:yellow; border-style:solid;" >
+<p>
+  archetype-card works!
+</p>
+{{archetype.name}}
+{{archetype | json }}
+<button>Press me</button>
+</div>

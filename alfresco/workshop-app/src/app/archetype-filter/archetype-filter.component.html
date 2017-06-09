@@ -1,0 +1,41 @@
+<div style="border-width:5px;border-color:blue; border-style:solid;" >
+<p>
+  archetype-filter works!
+</p>
+
+
+  <div>
+    <input placeholder="Search Archetypes">
+
+    <select>
+      <option>Birth Year</option>
+      <option>Name</option>
+    </select>
+  </div>
+
+  <div>
+    Sex:
+<!--
+    <button (click)="setSex('male')">Male</button>
+    <button (click)="setSex('female')">Female</button>
+    <button (click)="setSex('other')">Other</button>
+    <button (click)="setSex('')">All</button>
+    -->
+
+ <button (click)="setSex('male')"   [class.buttonSelected]=" filterProperties.sex === 'male'   ">Male</button>
+
+   <button (click)="setSex('female')" [class.buttonSelected]=" filterProperties.sex === 'female' ">Female</button>
+
+   <button (click)="setSex('other')"  [class.buttonSelected]=" filterProperties.sex === 'other'  ">Other</button>
+
+   <button (click)="setSex('')"       [class.buttonSelected]=" filterProperties.sex === ''       ">All</button>
+
+ 
+    
+    Race:
+    <button>Human</button>
+    <button>Droid</button>
+    <button>All</button>
+  </div>
+
+</div>

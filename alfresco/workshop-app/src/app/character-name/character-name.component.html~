@@ -1,0 +1,13 @@
+<div style="border-width:5px;border-color:green; border-style:solid;" >
+
+  character-name works!
+
+<form [formGroup]="characterNameFormGroup" (ngSubmit)="onLogin()">
+<div>
+  <input placeholder="Character Name" formControlName="characterName">
+
+
+  </div>
+  </form>
+
+</div>
